@@ -33,6 +33,7 @@ fixture_basename(const char *fixture_name)
 	return fixture_name;
 }
 
+#define CLAR_FIXTURE_PATH "D:/Temp/Libgit2/clar/test/resources/"
 #ifdef CLAR_FIXTURE_PATH
 const char *cl_fixture(const char *fixture_name)
 {

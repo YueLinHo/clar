@@ -5,9 +5,51 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="res">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="py">
+      <UniqueIdentifier>{bd292aa5-f28c-49a9-aae6-66532e1012b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\clar">
+      <UniqueIdentifier>{ae4aca3f-5457-483c-9553-1ab579bfac38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clar_test.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\fixtures.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\fs.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\print.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\sandbox.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="sample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clar.c">
+      <Filter>src\clar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="clar.suite">
+      <Filter>py</Filter>
+    </None>
+    <None Include="..\generate.py">
+      <Filter>py</Filter>
+    </None>
   </ItemGroup>
 </Project>
