@@ -1,0 +1,30 @@
+extern void test_sample__1(void);
+extern void test_sample__2(void);
+extern void test_sample__strings(void);
+extern void test_sample__strings_with_length(void);
+extern void test_sample__int(void);
+extern void test_sample__int_fmt(void);
+extern void test_sample__bool(void);
+extern void test_sample__ptr(void);
+extern void test_sample__initialize(void);
+extern void test_sample__cleanup(void);
+static const struct clar_func _clar_cb_sample[] = {
+    { "1", &test_sample__1 },
+    { "2", &test_sample__2 },
+    { "strings", &test_sample__strings },
+    { "strings_with_length", &test_sample__strings_with_length },
+    { "int", &test_sample__int },
+    { "int_fmt", &test_sample__int_fmt },
+    { "bool", &test_sample__bool },
+    { "ptr", &test_sample__ptr }
+};
+static struct clar_suite _clar_suites[] = {
+    {
+        "sample",
+        { "initialize", &test_sample__initialize },
+        { "cleanup", &test_sample__cleanup },
+        _clar_cb_sample, 8, 1
+    }
+};
+static const size_t _clar_suite_count = 1;
+static const size_t _clar_callback_count = 8;
